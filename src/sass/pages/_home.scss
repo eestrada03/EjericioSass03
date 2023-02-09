@@ -1,3 +1,106 @@
 /* ********* */
 /* @HOME */
 /* ********* */
+body {
+  height: 100vh;
+}
+.contenedor {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgb(20, 250, 222);
+  background: linear-gradient(
+    0deg,
+    rgba(20, 250, 222, 1) 0%,
+    rgba(20, 250, 222, 1) 25%,
+    rgba(25, 109, 145, 1) 98%
+  );
+  h4 {
+    margin: 0;
+    padding: 5px 20px;
+    color: white;
+    font-size: 1.8rem;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    @media screen and (min-width: 320px) and (orientation: portrait) {
+      font-size: 24px;
+      text-align: center;
+    }
+  }
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 30px 20px 30px 0px;
+    height: 40px;
+    border: solid white 1.5px;
+    background-color: transparent;
+    width: 20%;
+    border-left: none;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+    color: white;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: larger;
+    @media screen and (min-width: 320px) and (orientation: portrait) {
+      height: 50px;
+      border: solid white 3px;
+      border-left: none;
+      border-top-right-radius: 14px;
+      border-bottom-right-radius: 14px;
+      padding: 35px 20px 35px 20px;
+      width: 50%;
+      background-color: white;
+      color: black;
+      font-weight: bold;
+    }
+  }
+}
+
+input {
+  height: 40px;
+  padding: 10px 0 10px 20px;
+  border: solid white 1.5px;
+  background-color: transparent;
+  width: 55%;
+  border-right: none;
+  border-top-left-radius: 14px;
+  border-bottom-left-radius: 14px;
+  outline: none;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+  @media screen and (min-width: 320px) and (orientation: portrait) {
+    width: 100%;
+    height: 50px;
+    border: 3px solid white;
+    border-right: none;
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+  }
+}
+
+input::placeholder {
+  padding: 10px 20px 10px 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+  color: white;
+  opacity: 80%;
+  @media screen and (min-width: 320px) and (orientation: portrait) {
+    font-size: 25px;
+  }
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  width: 80vw;
+}

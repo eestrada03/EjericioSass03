@@ -1,3 +1,17 @@
 /* ********* */
 /* @VARIABLES */
 /* ********* */
+
+//Colores
+
+$colores-plantilla: (
+  azul: #196d91,
+  verde: #14fade,
+  fade:
+    linear-gradient(
+      0deg,
+      rgba(20, 250, 222, 1) 0%,
+      rgba(20, 250, 222, 1) 25%,
+      rgba(25, 109, 145, 1) 98%
+    ),
+);
